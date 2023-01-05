@@ -2897,6 +2897,12 @@ nav {
     height: 18px;
   }
 
+  .hero__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .catalog__lists {
     gap: 5px;
   }

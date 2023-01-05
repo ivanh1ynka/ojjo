@@ -40,8 +40,9 @@ function fixedNav() {
     nav.classList.remove('fixed__nav')
   }
 }
-window.addEventListener('scroll', fixedNav);
+window.addEventListener('scroll', fixedNav)
 
+;
 const readMoreBtn = document.querySelector("#read-more-btn");
 const text = document.querySelector(".service__text");
 
