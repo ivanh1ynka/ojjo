@@ -1,17 +1,17 @@
 // Custom Scripts
 // Custom scripts
 // Мобильное меню бургер
-function burgerhidden() {
+function burgerhiden() {
   const burger = document.querySelector('.burger')
-  const hidden = document.querySelector('.hidden')
+  const hiden = document.querySelector('.hiden')
   const body = document.querySelector('body')
   burger.addEventListener('click', () => {
-    if (!hidden.classList.contains('active')) {
-      hidden.classList.add('active')
+    if (!hiden.classList.contains('active')) {
+      hiden.classList.add('active')
       burger.classList.add('active-burger')
       body.classList.add('locked')
     } else {
-      hidden.classList.remove('active')
+      hiden.classList.remove('active')
       burger.classList.remove('active-burger')
       body.classList.remove('locked')
     }
@@ -19,13 +19,13 @@ function burgerhidden() {
   // Вот тут мы ставим брейкпоинт навбара
   window.addEventListener('resize', () => {
     if (window.innerWidth > 991.98) {
-      hidden.classList.remove('active')
+      hiden.classList.remove('active')
       burger.classList.remove('active-burger')
       body.classList.remove('locked')
     }
   })
 }
-burgerhidden()
+burgerhiden()
 
 
 // Вызываем эту функцию, если нам нужно зафиксировать меню при скролле.

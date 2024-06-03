@@ -14,10 +14,9 @@
 
 <body> 
 		<div id="goods" class="page__goods">
-		<header class="header">
+<header class="header">
 	<div class="header__wrapper">
-		<div class="container">
-			<nav class="nav">
+			<nav>
 				<div class="navbar">
 					<ul class="menu">
 						<li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контрагентам</a></li>
@@ -25,13 +24,15 @@
 						<li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Вакансии</a></li>
 					</ul>
 					<div class="logo"><a class="logo__link" href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
-					<ul class="menu menu-second">
+					<ul class="menu">
 						<li class="menu__item">
 							<div class="menu__box">
-									<div class="menu__search">
-										<button class="btn-search"><i class="fas fa-search"></i></button>
-										<input type="text" id="search" class="menu__input" placeholder="Type to Search...">
-									</div>
+							    <form name="menu__search">
+							        <div class="search__container">
+							            <input type="text" id="search" class="menu__input" name="txt">
+							            <button type="submit" class="search__button"><i class="fas fa-search"></i></button>
+							        </div>
+							    </form>
 							</div>
 						</li>
 						<li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Вход</a></li>
@@ -41,38 +42,37 @@
 					<div class="burger">
 						<span></span>
 					</div>
-					<div class="hidden">
-					<div class="hidden-logo">
+					<div class="hiden">
+					<div class="hiden-logo">
 						<a class="logo__link" href="index.html"><img src="img/logo.svg" alt="logo"></a>
 					</div>
-						<ul class="hidden-menu">
-							<li class="hidden-menu__item"><a href="#" class="hidden-menu__item-link" data-scroll>Контрагентам</a></li>
-							<li class="hidden-menu__item"><a href="#" class="hidden-menu__item-link" data-scroll>Дизайнерам</a></li>
-							<li class="hidden-menu__item"><a href="#" class="hidden-menu__item-link" data-scroll>Вакансии</a></li>
-							<li class="hidden-menu__item"><a href="#" class="hidden-menu__item-link" data-scroll>Вход/Регистрация</a></li>
+						<ul class="hiden-menu">
+							<li class="hiden-menu__item"><a href="#" class="hiden-menu__item-link" data-scroll>Контрагентам</a></li>
+							<li class="hiden-menu__item"><a href="#" class="hiden-menu__item-link" data-scroll>Дизайнерам</a></li>
+							<li class="hiden-menu__item"><a href="#" class="hiden-menu__item-link" data-scroll>Вакансии</a></li>
+							<li class="hiden-menu__item"><a href="#" class="hiden-menu__item-link" data-scroll>Вход/Регистрация</a></li>
 						</ul>
-						<ul class="hidden-menu-auth">
-							<li class="hidden-menu__item"><a href="#" class="hidden-menu__item-link" data-scroll><i class="fa fa-solid fa-user"></i></a></li>
-							<li class="hidden-menu__item"><a href="#" class="hidden-menu__item-link" data-scroll><i class="fa fa-solid fa-heart"></i></a></li>
+						<ul class="hiden-menu-auth">
+							<li class="hiden-menu__item"><a href="contacts.html" class="hiden-menu__item-link" data-scroll><i class="fa fa-solid fa-user"></i></a></li>
+							<li class="hiden-menu__item"><a href="#" class="hiden-menu__item-link" data-scroll><i class="fa fa-solid fa-heart"></i></a></li>
 						</ul>
-						<ul class="hidden-menu-social">
-							<li class="hidden-menu__item"><a href="#" class="hidden-menu__item-link" data-scroll><i class="fa fa-solid fa-youtube"></i></a></li>
-							<li class="hidden-menu__item"><a href="#" class="hidden-menu__item-link" data-scroll><i class="fa fa-solid fa-vk"></i></a></li>
-							<li class="hidden-menu__item"><a href="#" class="hidden-menu__item-link" data-scroll><i class="fa fa-solid fa-facebook"></i></a></li>
-							<li class="hidden-menu__item"><a href="#" class="hidden-menu__item-link" data-scroll><i class="fa fa-brands fa-telegram"></i></a></li>
-							<li class="hidden-menu__item"><a href="#" class="hidden-menu__item-link" data-scroll><i class="fa fa-solid fa-e"></i></a></li>
+						<ul class="hiden-menu-social">
+							<li class="hiden-menu__item"><a href="#" class="hiden-menu__item-link" data-scroll><i class="fa fa-solid fa-youtube"></i></a></li>
+							<li class="hiden-menu__item"><a href="#" class="hiden-menu__item-link" data-scroll><i class="fa fa-solid fa-vk"></i></a></li>
+							<li class="hiden-menu__item"><a href="#" class="hiden-menu__item-link" data-scroll><i class="fa fa-solid fa-facebook"></i></a></li>
+							<li class="hiden-menu__item"><a href="#" class="hiden-menu__item-link" data-scroll><img class="hiden-menu__item-img-telegram" src="img/telegram.svg" alt="img"></a></li>
+							<li class="hiden-menu__item"><a href="#" class="hiden-menu__item-link" data-scroll><img class="hiden-menu__item-img-e" src="img/E.svg" alt="img"></a></li>
 						</ul>
 					</div>
 				</div>
-			</nav>
-		</div>
-	</div> 
+			</nav> 
+	</div>
 </header>
 		<section class="goods">
 	<div class="container">
 		<div class="goods__wrapper">
 			<div class="goods__item">
-				<ul class="goods__select-lists" data-aos="zoom-in-down" data-aos-duration="1500">
+				<ul class="goods__select-lists">
 					<li class="goods__select-list">
 						<select class="goods__select">
 							<option class="goods__option" val="">Бренд </option>
@@ -129,7 +129,7 @@
 					</li>
 				</ul>
 				<ul class="goods__lists">
-					<li class="goods__list" data-aos="flip-left" data-aos-duration="1500">
+					<li  data-aos="fade-up" data-aos-duration="2000" class="goods__list">
 						<img src="img/Rectangle.png" alt="" class="goods__img">
 						<p class="goods__text">Подвеска</p>
 						<h2 class="goods__title">Dolce & Gabanna</h2>
@@ -137,7 +137,7 @@
 							<a class="goods__link" href="purchase.html">175 000 ₽</a>
 						</button>	
 					</li>
-					<li class="goods__list" data-aos="flip-left" data-aos-duration="1500">
+					<li  data-aos="fade-up" data-aos-duration="2000" class="goods__list">
 						<img src="img/Rectangle.png" alt="" class="goods__img">
 						<p class="goods__text">Подвеска</p>
 						<h2 class="goods__title">Dolce & Gabanna</h2>
@@ -145,7 +145,7 @@
 							<a class="goods__link" href="purchase.html">175 000 ₽</a>
 						</button>	
 					</li>
-					<li class="goods__list" data-aos="flip-left" data-aos-duration="1500">
+					<li  data-aos="fade-up" data-aos-duration="2000" class="goods__list">
 						<img src="img/Rectangle.png" alt="" class="goods__img">
 						<p class="goods__text">Подвеска</p>
 						<h2 class="goods__title">Dolce & Gabanna</h2>
@@ -153,7 +153,7 @@
 							<a class="goods__link" href="purchase.html">175 000 ₽</a>
 						</button>	
 					</li>
-					<li class="goods__list" data-aos="flip-left" data-aos-duration="1500">
+					<li  data-aos="fade-up" data-aos-duration="2000" class="goods__list">
 						<img src="img/Rectangle.png" alt="" class="goods__img">
 						<p class="goods__text">Подвеска</p>
 						<h2 class="goods__title">Dolce & Gabanna</h2>
@@ -161,7 +161,7 @@
 							<a class="goods__link" href="purchase.html">175 000 ₽</a>
 						</button>	
 					</li>
-					<li class="goods__list" data-aos="flip-left" data-aos-duration="1500">
+					<li  data-aos="fade-up" data-aos-duration="2000" class="goods__list">
 						<img src="img/Rectangle.png" alt="" class="goods__img">
 						<p class="goods__text">Подвеска</p>
 						<h2 class="goods__title">Dolce & Gabanna</h2>
@@ -169,7 +169,7 @@
 							<a class="goods__link" href="purchase.html">175 000 ₽</a>
 						</button>	
 					</li>
-					<li class="goods__list" data-aos="flip-left" data-aos-duration="1500">
+					<li  data-aos="fade-up" data-aos-duration="2000" class="goods__list">
 						<img src="img/Rectangle.png" alt="" class="goods__img">
 						<p class="goods__text">Подвеска</p>
 						<h2 class="goods__title">Dolce & Gabanna</h2>
@@ -179,9 +179,9 @@
 					</li>
 				</ul>
 			</div>
-			<div class="goods__more" data-aos="zoom-in-up" data-aos-duration="1500">
+			<div class="goods__more">
 				<div class="goods__btn goods__next">
-					<a class="goods__link" href="#service">покажите еще</a>
+					<a data-aos="zoom-in" data-aos-duration="2000" class="goods__link" href="#service">покажите еще</a>
 				</div>
 			</div>
 		</div>
@@ -190,25 +190,25 @@
 		<section class="service" id="service">
 	<div class="container">
 		<div class="service__wrapper">
-			<div class="service__item" data-aos="fade-up" data-aos-duration="1500">
+			<div data-aos="zoom-in" data-aos-duration="2000" class="service__item">
 				<p class="service__text text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis veritatis animi aliquam laboriosam velit, esse, blanditiis aspernatur sint est magnam debitis delectus in fuga fugiat repellat dignissimos ipsum necessitatibus corrupti veniam reprehenderit,<span class="dots"> ...</span> <span class="moreText"> assumenda sapiente expedita labore atque! Sint velit cumque minus pariatur quisquam, beatae ab quo impedit eaque soluta vel laboriosam itaque similique iste ex aut in nihil dolorem consequuntur possimus eligendi eos optio ipsam! Sint ullam voluptate obcaecati asperiores eos vero sed iusto magnam ad, vel repellat quidem? Omnis fugit accusantium, illo quos eos odio consectetur et nemo excepturi deleniti dolorum adipisci dolores delectus possimus libero, sed iusto dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis neque distinctio modi dicta ut impedit, vel dolore dolores maiores quis vitae nesciunt ab aut, praesentium facilis necessitatibus odio exercitationem velit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></p>
 				<button id="read-more-btn" class="service__open">READ MORE</button>
 			</div>
-			<div class="service__item" data-aos="fade-up" data-aos-duration="1500">
+			<div class="service__item">
 				<ul class="service__lists">
-					<li class="service__list">
+					<li data-aos="flip-up" data-aos-duration="2000" class="service__list">
 						<img src="img/car.svg" alt="" class="service__img">
 						<p class="service__text service__text-img">Бесплатная доставка</p>
 					</li>
-					<li class="service__list">
+					<li data-aos="flip-up" data-aos-duration="2000"  class="service__list">
 						<img src="img/list.svg" alt="" class="service__img">
 						<p class="service__text service__text-img">Индивидуальный	дизайн</p>
 					</li>
-					<li class="service__list">
+					<li data-aos="flip-up" data-aos-duration="2000"  class="service__list">
 						<img src="img/fitting.svg" alt="" class="service__img">
 						<p class="service__text service__text-img">Бесплатная	примерка</p>
 					</li>
-					<li class="service__list">
+					<li data-aos="flip-up" data-aos-duration="2000"  class="service__list">
 						<img src="img/balls.svg" alt="" class="service__img">
 						<p class="service__text service__text-img">Личный	подход</p>
 					</li>
@@ -221,19 +221,19 @@
 	<div class="container">
 		<div class="mailling__wrapper">
 			<div class="mailling__items">
-				<p class="mailling__text" data-aos="fade-up" data-aos-duration="1000">Полезные советы и персональный предложения</p>
-				<h2 class="mailling__title" data-aos="fade-up" data-aos-duration="1000">Эксклюзивная рассылка</h2>
+				<p data-aos="flip-up" data-aos-duration="2000" class="mailling__text">Полезные советы и персональный предложения</p>
+				<h2 data-aos="flip-up" data-aos-duration="2000" class="mailling__title">Эксклюзивная рассылка</h2>
 			</div>
 			<div class="mailling__items">
 				<div class="mailling__boxs">
 					<div class="mailling__box">
-						<ul class="mailling__lists">
-							<li class="mailling__list" data-aos="fade-right" data-aos-duration="1000"><img class="mailling__img" src=" img/right.svg" alt="">Личный менеджер</li>
-							<li class="mailling__list" data-aos="fade-right" data-aos-duration="1000"><img class="mailling__img" src=" img/right.svg" alt="">Доставка и оформление</li>
-							<li class="mailling__list" data-aos="fade-right" data-aos-duration="1000"><img class="mailling__img" src=" img/right.svg" alt="">Индивидуальный дизайн</li>
+						<ul data-aos="zoom-in-right" data-aos-duration="2000" class="mailling__lists">
+							<li class="mailling__list"><img class="mailling__img" src=" img/right.svg" alt="">Личный менеджер</li>
+							<li class="mailling__list"><img class="mailling__img" src=" img/right.svg" alt="">Доставка и оформление</li>
+							<li class="mailling__list"><img class="mailling__img" src=" img/right.svg" alt="">Индивидуальный дизайн</li>
 						</ul>
 					</div>
-					<div class="mailling__box" data-aos="fade-up" data-aos-duration="1000">
+					<div  data-aos="zoom-in-left" data-aos-duration="2000" class="mailling__box">
 						<div class="mailling__item">
 							<input class="mailling__input" type="email" placeholder="Ваш e-mail">
 							<div class="mailling__btn">отправить</div>
@@ -244,12 +244,12 @@
 		</div>
 	</div>
 </section>
-		<footer class="footer">
+<footer class="footer">
 	<div class="container">
 		<div class="footer__wrapper">
 			<div class="footer__item">
 				<div class="footer__boxs">
-				<div class="footer__box" data-aos="flip-up" data-aos-duration="3000">
+				<div data-aos="zoom-in-up" data-aos-duration="2000" class="footer__box">
 					<h3 class="footer__title">Полезные ссылки</h3>
 					<ul class="footer__lists">
 						<li class="footer__list"><a href="#" class="footer_link">Доставка</a></li>
@@ -258,7 +258,7 @@
 						<li class="footer__list"><a href="#" class="footer_link">Политика конфиденциальности</a></li>
 					</ul>
 				</div>
-				<div class="footer__box" data-aos="flip-up" data-aos-duration="3000">
+				<div data-aos="zoom-in-up" data-aos-duration="2000" class="footer__box">
 					<h3 class="footer__title">оплата</h3>
 					<p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</p>
 					<div class="footer__images">
@@ -266,23 +266,36 @@
 						<img src="img/MasterCard.svg" alt="MasterCart" class="footer__img">
 					</div>
 				</div>
-				<div class="footer__box" data-aos="flip-up" data-aos-duration="3000">
+				<div data-aos="zoom-in-up" data-aos-duration="2000" class="footer__box">
 					<h3 class="footer__title">контакты</h3>
 					<ul class="footer__lists">
-						<li class="footer__list"><a href="tel:88122345655" class="footer_link"><i class="fa-solid fa-phone"></i> 8 (812) 234-56-55</a></li>
-						<li class="footer__list"><a href="tel:88122345655" class="footer_link"><i class="fa-solid fa-phone"></i> 8 (812) 234-56-55</a></li>
-						<li class="footer__list"><a href="mailto:ojjo@ojjo.ru" class="footer_link"><i class="fa fa-solid fa-envelope"></i>ojjo@ojjo.ru</a></li>
+						<li class="footer__list"><a href="tel:88122345655" class="footer_link"><img class="footer__img-phone" src="img/phone.svg" alt=""> 8 (812) 234-56-55</a></li>
+						<li class="footer__list"><a href="tel:88122345655" class="footer_link"><img class="footer__img-phone" src="img/phone.svg" alt=""> 8 (812) 234-56-55</a></li>
+						<li class="footer__list"><a href="mailto:ojjo@ojjo.ru" class="footer_link"><img class="footer__img-mail" src="img/mail-2.svg" alt="">ojjo@ojjo.ru</a></li>
 					</ul>
 				</div>
-				<div class="footer__box" data-aos="flip-up" data-aos-duration="3000">
+				<div data-aos="zoom-in-up" data-aos-duration="2000" class="footer__box">
 					<h3 class="footer__title">социальные сети</h3>
 					<p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</p>
 					<ul class="footer-menu-social">
-						<li class="footer-menu__item"><a href="#" class="footer-menu__item-link" data-scroll><i class="fa fa-solid fa-youtube"></i></a></li>
-						<li class="footer-menu__item"><a href="#" class="footer-menu__item-link" data-scroll><i class="fa fa-solid fa-vk"></i></a></li>
-						<li class="footer-menu__item"><a href="#" class="footer-menu__item-link" data-scroll><i class="fa fa-solid fa-facebook"></i></a></li>
-						<li class="footer-menu__item"><a href="#" class="footer-menu__item-link" data-scroll><i class="fa fa-brands fa-telegram"></i></a></li>
-						<li class="footer-menu__item"><a href="#" class="footer-menu__item-link" data-scroll><i class="fa fa-solid fa-e"></i></a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__item-link" data-scroll><img class="footer-menu__item-img-dark-youtube" src="img/youtube.svg" alt="img"></a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__item-link" data-scroll>
+							<img class="footer-menu__item-img-dark-vk" src="img/vk.svg" alt="img"></a></li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__item-link" data-scroll>
+							<img class="footer-menu__item-img-dark-facebook" src="img/facebook.svg" alt="img">
+						</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__item-link" data-scroll>
+							<img class="footer-menu__item-img-dark-telegram" src="img/dark-telegram.svg" alt="img">
+						</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__item-link" data-scroll>
+							<img class="footer-menu__item-img-dark-e" src="img/dark-E.svg" alt="img">
+						</a>
+					</li>
 					</ul>
 				</div>
 				</div>
